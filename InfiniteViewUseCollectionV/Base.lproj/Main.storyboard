@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4o-g3-qBH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LrP-aL-Js1">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="yhJ-qS-eIq">
+                                            <size key="itemSize" width="600" height="300"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="LrP-aL-Js1" firstAttribute="top" secondItem="y4o-g3-qBH" secondAttribute="top" id="JI4-kH-3HE"/>
+                                    <constraint firstItem="LrP-aL-Js1" firstAttribute="leading" secondItem="y4o-g3-qBH" secondAttribute="leading" id="K9q-UK-LEQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="LrP-aL-Js1" secondAttribute="trailing" id="hKi-qT-Z0i"/>
+                                    <constraint firstAttribute="bottom" secondItem="LrP-aL-Js1" secondAttribute="bottom" id="rEP-Lk-okJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5x-dd-G5b">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbk-Gr-pjw">
+                                        <rect key="frame" x="30" y="32" width="109" height="30"/>
+                                        <state key="normal" title="Auto right scroll">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="RightScrollButtonDidSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N0n-lg-EkY"/>
+                                        </connections>
+                                    </button>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ljk-Lb-hfw">
+                                        <rect key="frame" x="281" y="13" width="39" height="37"/>
+                                        <connections>
+                                            <action selector="pageControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="WxE-r0-EHz"/>
+                                        </connections>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ljk-Lb-hfw" firstAttribute="top" secondItem="a5x-dd-G5b" secondAttribute="top" constant="13" id="EDx-XP-ufD"/>
+                                    <constraint firstItem="sbk-Gr-pjw" firstAttribute="leading" secondItem="a5x-dd-G5b" secondAttribute="leading" constant="30" id="I64-2E-S4E"/>
+                                    <constraint firstAttribute="centerX" secondItem="ljk-Lb-hfw" secondAttribute="centerX" id="Iai-0k-P9b"/>
+                                    <constraint firstItem="sbk-Gr-pjw" firstAttribute="top" secondItem="a5x-dd-G5b" secondAttribute="top" constant="32" id="XEj-Ma-eXL"/>
+                                    <constraint firstAttribute="bottom" secondItem="sbk-Gr-pjw" secondAttribute="bottom" constant="238" id="edN-eB-zm6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a5x-dd-G5b" firstAttribute="top" secondItem="y4o-g3-qBH" secondAttribute="bottom" id="E9L-KW-452"/>
+                            <constraint firstItem="y4o-g3-qBH" firstAttribute="height" secondItem="a5x-dd-G5b" secondAttribute="height" id="GeB-Ve-ZEk"/>
+                            <constraint firstItem="a5x-dd-G5b" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="RDN-W1-hUC"/>
+                            <constraint firstItem="y4o-g3-qBH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Zp1-Pe-JJJ"/>
+                            <constraint firstItem="a5x-dd-G5b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dNE-Wt-Rwe"/>
+                            <constraint firstAttribute="trailing" secondItem="y4o-g3-qBH" secondAttribute="trailing" id="ijY-rC-M8T"/>
+                            <constraint firstItem="y4o-g3-qBH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jUk-tQ-pis"/>
+                            <constraint firstAttribute="trailing" secondItem="a5x-dd-G5b" secondAttribute="trailing" id="woP-wV-uFs"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="infiniteView" destination="LrP-aL-Js1" id="YWE-dG-rhu"/>
+                        <outlet property="pageControl" destination="ljk-Lb-hfw" id="12E-0N-s9f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
