@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114568B11F1C6B8B00472545 /* ALInfiniteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 114568AC1F1C6B8B00472545 /* ALInfiniteView.m */; };
+		114568B21F1C6B8B00472545 /* ALInfiniteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114568AD1F1C6B8B00472545 /* ALInfiniteView.xib */; };
+		114568B31F1C6B8B00472545 /* ALInfiniteViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 114568AF1F1C6B8B00472545 /* ALInfiniteViewCell.m */; };
+		114568B41F1C6B8B00472545 /* ALInfiniteViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114568B01F1C6B8B00472545 /* ALInfiniteViewCell.xib */; };
 		C949BD381AF1D91300E09866 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C949BD371AF1D91300E09866 /* main.m */; };
 		C949BD3B1AF1D91300E09866 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C949BD3A1AF1D91300E09866 /* AppDelegate.m */; };
 		C949BD3E1AF1D91300E09866 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C949BD3D1AF1D91300E09866 /* ViewController.m */; };
@@ -14,7 +18,6 @@
 		C949BD431AF1D91300E09866 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C949BD421AF1D91300E09866 /* Images.xcassets */; };
 		C949BD461AF1D91300E09866 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C949BD441AF1D91300E09866 /* LaunchScreen.xib */; };
 		C949BD521AF1D91400E09866 /* InfiniteViewUseCollectionVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C949BD511AF1D91400E09866 /* InfiniteViewUseCollectionVTests.m */; };
-		C9D63DAB1B0D90E900CFBBB7 /* ColorCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D63DAA1B0D90E900CFBBB7 /* ColorCollectionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		114568AB1F1C6B8B00472545 /* ALInfiniteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALInfiniteView.h; path = ALInfiniteView/ALInfiniteView.h; sourceTree = "<group>"; };
+		114568AC1F1C6B8B00472545 /* ALInfiniteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALInfiniteView.m; path = ALInfiniteView/ALInfiniteView.m; sourceTree = "<group>"; };
+		114568AD1F1C6B8B00472545 /* ALInfiniteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ALInfiniteView.xib; path = ALInfiniteView/ALInfiniteView.xib; sourceTree = "<group>"; };
+		114568AE1F1C6B8B00472545 /* ALInfiniteViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALInfiniteViewCell.h; path = ALInfiniteView/ALInfiniteViewCell.h; sourceTree = "<group>"; };
+		114568AF1F1C6B8B00472545 /* ALInfiniteViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALInfiniteViewCell.m; path = ALInfiniteView/ALInfiniteViewCell.m; sourceTree = "<group>"; };
+		114568B01F1C6B8B00472545 /* ALInfiniteViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ALInfiniteViewCell.xib; path = ALInfiniteView/ALInfiniteViewCell.xib; sourceTree = "<group>"; };
 		C949BD321AF1D91300E09866 /* InfiniteViewUseCollectionV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteViewUseCollectionV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C949BD361AF1D91300E09866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C949BD371AF1D91300E09866 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,8 +50,6 @@
 		C949BD4B1AF1D91400E09866 /* InfiniteViewUseCollectionVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteViewUseCollectionVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C949BD501AF1D91400E09866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C949BD511AF1D91400E09866 /* InfiniteViewUseCollectionVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfiniteViewUseCollectionVTests.m; sourceTree = "<group>"; };
-		C9D63DA91B0D90E900CFBBB7 /* ColorCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorCollectionCell.h; sourceTree = "<group>"; };
-		C9D63DAA1B0D90E900CFBBB7 /* ColorCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorCollectionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114568A01F1C697200472545 /* ALInfiniteView */ = {
+			isa = PBXGroup;
+			children = (
+				114568AB1F1C6B8B00472545 /* ALInfiniteView.h */,
+				114568AC1F1C6B8B00472545 /* ALInfiniteView.m */,
+				114568AD1F1C6B8B00472545 /* ALInfiniteView.xib */,
+				114568AE1F1C6B8B00472545 /* ALInfiniteViewCell.h */,
+				114568AF1F1C6B8B00472545 /* ALInfiniteViewCell.m */,
+				114568B01F1C6B8B00472545 /* ALInfiniteViewCell.xib */,
+			);
+			name = ALInfiniteView;
+			sourceTree = "<group>";
+		};
 		C949BD291AF1D91300E09866 = {
 			isa = PBXGroup;
 			children = (
@@ -84,12 +104,11 @@
 		C949BD341AF1D91300E09866 /* InfiniteViewUseCollectionV */ = {
 			isa = PBXGroup;
 			children = (
+				114568A01F1C697200472545 /* ALInfiniteView */,
 				C949BD391AF1D91300E09866 /* AppDelegate.h */,
 				C949BD3A1AF1D91300E09866 /* AppDelegate.m */,
 				C949BD3C1AF1D91300E09866 /* ViewController.h */,
 				C949BD3D1AF1D91300E09866 /* ViewController.m */,
-				C9D63DA91B0D90E900CFBBB7 /* ColorCollectionCell.h */,
-				C9D63DAA1B0D90E900CFBBB7 /* ColorCollectionCell.m */,
 				C949BD3F1AF1D91300E09866 /* Main.storyboard */,
 				C949BD421AF1D91300E09866 /* Images.xcassets */,
 				C949BD441AF1D91300E09866 /* LaunchScreen.xib */,
@@ -205,7 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C949BD411AF1D91300E09866 /* Main.storyboard in Resources */,
+				114568B21F1C6B8B00472545 /* ALInfiniteView.xib in Resources */,
 				C949BD461AF1D91300E09866 /* LaunchScreen.xib in Resources */,
+				114568B41F1C6B8B00472545 /* ALInfiniteViewCell.xib in Resources */,
 				C949BD431AF1D91300E09866 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,9 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C949BD3E1AF1D91300E09866 /* ViewController.m in Sources */,
-				C9D63DAB1B0D90E900CFBBB7 /* ColorCollectionCell.m in Sources */,
+				114568B31F1C6B8B00472545 /* ALInfiniteViewCell.m in Sources */,
 				C949BD3B1AF1D91300E09866 /* AppDelegate.m in Sources */,
 				C949BD381AF1D91300E09866 /* main.m in Sources */,
+				114568B11F1C6B8B00472545 /* ALInfiniteView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
