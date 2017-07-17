@@ -1,3 +1,3 @@
-# infinteViewUseCollectionView
-Infine View Use UICollectionView and Custom view cell.
+# infiniteViewUseCollectionView
+Infinite View Use UICollectionView and Custom view cell.
 
