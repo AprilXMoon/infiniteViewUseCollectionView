@@ -123,13 +123,11 @@ static NSString *ALInfiniteCellIdentifier = @"ALInfiniteCellIdentifier";
     
     [self scrollToVisibleFirstItem];
     
-    _isAutoScrolling = YES;
     _autoScrollTimer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(autoScrollAction) userInfo:nil repeats:YES];
 }
 
 - (void)stopAutoScroll {
     if(_autoScrollTimer) {
-        _isAutoScrolling = NO;
         [_autoScrollTimer invalidate];
         _autoScrollTimer = nil;
     }

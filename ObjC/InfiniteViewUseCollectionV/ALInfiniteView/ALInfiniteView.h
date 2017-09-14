@@ -14,7 +14,6 @@
 
 @property (weak, nonatomic) id <ALInfiniteViewDelegate> delegate;
 @property (nonatomic, getter = isAutoScroll) BOOL autoScrolled;
-@property (nonatomic, readonly) BOOL isAutoScrolling;
 
 - (instancetype)initWithFrame:(CGRect)frame owner:(id)owner;
 
