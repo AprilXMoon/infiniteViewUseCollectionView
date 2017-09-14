@@ -88,10 +88,6 @@ static NSString *ALInfiniteCellIdentifier = @"ALInfiniteCellIdentifier";
         return;
     }
     
-    if (_contentView.isHidden) {
-        [_contentView setHidden:NO];
-    }
-    
     [_ALInfiniteCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
     
     [_pageControl setCurrentPage:0];
