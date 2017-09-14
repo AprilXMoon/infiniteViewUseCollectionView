@@ -120,6 +120,34 @@ class ALInfiniteView: UIView {
         pageControl.currentPage = ((Int)(contentOffsetX / pageWidth) - 1)
     }
     
+    //MARK: - AutoScroll
+    
+    func startAutoScroll() {
+        guard infiniteItems.count > 1 else {
+            return
+        }
+        
+        if autoScrollTimer != nil {
+            stopAutoScroll()
+        }
+        
+        scrollToVisibleFirstItem()
+        
+        autoScrollTimer = Timer(timeInterval: 5.0, target: self, selector: #selector(autoScrollAction), userInfo: nil, repeats: true)
+        
+    }
+    
+    func autoScrollAction() {
+        let offset = ALInfiniteCollectionView.contentOffset.x + ALInfiniteCollectionView.bounds.size.width
+        ALInfiniteCollectionView.setContentOffset(CGPoint(x: offset, y: 0), animated: true)
+    }
+    
+    func stopAutoScroll() {
+        if autoScrollTimer != nil {
+            autoScrollTimer?.invalidate()
+            autoScrollTimer = nil
+        }
+    }
 }
 
 extension ALInfiniteView: UICollectionViewDelegate {
