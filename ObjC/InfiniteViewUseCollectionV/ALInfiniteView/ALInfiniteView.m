@@ -60,7 +60,6 @@ static NSString *ALInfiniteCellIdentifier = @"ALInfiniteCellIdentifier";
 
 - (void)createInfiniteItems:(NSArray *)contentItems {
     _originItems = contentItems;
-    _hasBannerData = (_originItems.count > 0);
     
     _infiniteItems = [self createInfiniteDataWithOriginialData:_originItems];
     [_ALInfiniteCollectionView reloadData];
@@ -102,9 +101,9 @@ static NSString *ALInfiniteCellIdentifier = @"ALInfiniteCellIdentifier";
 
 - (IBAction)pageControlValueChanged:(id)sender {
     CGFloat pageWidth = _ALInfiniteCollectionView.bounds.size.width;
-    CGPoint scollTo = CGPointMake(pageWidth * (_pageControl.currentPage + 1), 0);
+    CGPoint scrollTo = CGPointMake(pageWidth * (_pageControl.currentPage + 1), 0);
     
-    [_ALInfiniteCollectionView setContentOffset:scollTo animated:YES];
+    [_ALInfiniteCollectionView setContentOffset:scrollTo animated:YES];
 }
 
 - (void)setPageControlCurrentPage:(UIScrollView *)scrollView {
